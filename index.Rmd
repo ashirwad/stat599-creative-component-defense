@@ -1,0 +1,45 @@
+---
+title: "Stat 599 defense"
+author: "Ashirwad Barnwal"
+date: '2022-04-07'
+output: 
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["default", "kunoichi", "ninjutsu", "assets/custom.css"]
+    seal: true
+    self_contained: false
+    nature:
+      ratio: "16:9"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+---
+
+# .purple[Ischemic stroke treatments]
+
+.pull-left[
+
+## Aspirin
+
+```{r echo = FALSE}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/2/28/Aspirin1.jpg")
+```
+
+[via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Aspirin1.jpg)
+
+]
+
+.pull-right[
+
+## Heparin
+
+```{r echo = FALSE, out.width = "65%"}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d0/Heparin_Sodium_sample.jpg")
+```
+
+[via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Heparin_Sodium_sample.jpg)
+
+]
+
