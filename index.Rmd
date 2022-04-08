@@ -15,6 +15,38 @@ output:
       countIncrementalSlides: false
 ---
 
+```{r extra-setup, include = FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::use_tachyons()
+```
+
+---
+
+# .purple[Ischemic stroke types]
+
+.panelset[
+
+.panel[.panel-name[Thrombotic stroke]
+
+```{r gyfcat-thrombotic-stroke, echo = FALSE, out.width = "64%"}
+knitr::include_graphics("https://thumbs.gfycat.com/BouncyDapperChamois-size_restricted.gif")
+```
+
+[via Gyfcat](https://gfycat.com/bouncydapperchamois)
+
+]
+
+.panel[.panel-name[Embolic stroke]
+
+```{r gyfcat-embolic-stroke, echo = FALSE, out.width = "54%"}
+knitr::include_graphics("https://thumbs.gfycat.com/InbornFrigidIcterinewarbler-size_restricted.gif")
+```
+
+[via Gyfcat](https://gfycat.com/inbornfrigidicterinewarbler)
+
+]
+]
+
 ---
 
 # .purple[Ischemic stroke treatments]
@@ -23,7 +55,7 @@ output:
 
 ## Aspirin
 
-```{r echo = FALSE}
+```{r wiki-aspirin, echo = FALSE}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/2/28/Aspirin1.jpg")
 ```
 
@@ -35,7 +67,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/2/28/Asp
 
 ## Heparin
 
-```{r echo = FALSE, out.width = "65%"}
+```{r wiki-heparin, echo = FALSE, out.width = "65%"}
 knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d0/Heparin_Sodium_sample.jpg")
 ```
 
