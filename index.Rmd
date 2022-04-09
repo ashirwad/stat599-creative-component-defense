@@ -22,6 +22,30 @@ xaringanExtra::use_tachyons()
 
 ---
 
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
+.font5[Ischemic stroke 101]
+]
+]]
+
+---
+
+# .purple[What is ischemic stroke?]
+
+```{r ischemic-stroke-graphic, echo = FALSE, out.width = "90%"}
+knitr::include_graphics("https://www.stroke.org.uk/sites/default/files/publications/ischaemic_stroke_graphic_by_the_stroke_association_full_width_content_image.png")
+```
+
+[via Stroke Association](https://www.stroke.org.uk/what-is-stroke/types-of-stroke/ischaemic-stroke#:~:text=Around%2085%25%20of%20strokes%20are,vessels%20deep%20inside%20the%20brain.)
+
+---
+
 # .purple[Ischemic stroke types]
 
 .panelset[
