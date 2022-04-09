@@ -133,3 +133,49 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/d/d0/Hep
 
 ]
 
+---
+
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
+.font5[International Stroke Trial]
+]
+]]
+
+---
+
+# .purple[International Stroke Trial (IST) at a glance]
+
+.pull-left[
+
+### Treatment scheme: Aspirin x Heparin
+
+```{r ist-treatment-scheme, echo = FALSE}
+knitr::include_graphics("figs/ist-treatment-scheme.png")
+```
+
+[via Clipart](http://clipart-library.com/newhp/119-1195221_file-care-cartoon-svg-wikimedia-commons-open-patient.png)
+
+]
+
+.pull-right[
+
+### Outcome: Dead or dependent at 6-months
+
+```{r ist-outcome, echo = FALSE, fig.show = "hold", out.width = "49%"}
+knitr::include_graphics(
+  c(
+    "http://clipart-library.com/img/1371179.jpg",
+    "http://clipart-library.com/newhp/walker-caregiver.jpg"
+  )
+)
+```
+
+[via Clipart](http://clipart-library.com/)
+
+]
