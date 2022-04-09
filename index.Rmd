@@ -30,6 +30,40 @@ class: bg-main3 split-30 hide-slide-number
 ]
 .column.slide-in-right[.content.vmiddle[
 .sliderbox.shade_main.pad1[
+.font5[Precision medicine 101]
+]
+]]
+
+---
+
+# .purple[Current scenario in medicine]
+
+```{r current-medicine, echo = FALSE, out.width = "95%"}
+knitr::include_graphics("https://www.efpia.eu/media/602899/screenshot-2021-08-03-at-170409.png")
+```
+
+[via efpia](https://www.efpia.eu/about-medicines/development-of-medicines/precision-medicine/)
+
+---
+
+# .purple[Future of medicine]
+
+```{r future-medicine, echo = FALSE, out.width = "95%"}
+knitr::include_graphics("https://www.efpia.eu/media/602901/screenshot-2021-08-03-at-170328.png")
+```
+
+[via efpia](https://www.efpia.eu/about-medicines/development-of-medicines/precision-medicine/)
+
+---
+
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
 .font5[Ischemic stroke 101]
 ]
 ]]
