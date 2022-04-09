@@ -20,6 +20,14 @@ xaringanExtra::use_panelset()
 xaringanExtra::use_tachyons()
 ```
 
+```{r setup, include = FALSE}
+library(conflicted)
+library(rio)
+library(mapview)
+library(boxr)
+box_auth()
+```
+
 ---
 
 layout: false
@@ -179,3 +187,13 @@ knitr::include_graphics(
 [via Clipart](http://clipart-library.com/)
 
 ]
+
+---
+
+# .purple[IST recruitment: 19,435 patients, 467 hospitals, 36 countries]
+
+```{r patient-map-leaflet, echo = FALSE, message = FALSE, out.width = "100%"}
+patient_map_leaflet <- box_read(943115285417)
+patient_map_leaflet
+```
+
