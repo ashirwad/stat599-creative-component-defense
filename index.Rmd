@@ -224,3 +224,23 @@ ist_trt_by_outcome_crosstab
 
 ]
 ]
+
+---
+
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
+.font5[Exploratory data analysis]
+]
+]]
+
+---
+
+# [Tableau story](https://public.tableau.com/app/profile/ashirwad.barnwal5453/viz/ist-corrected-eda/ISTEDA)
+
+<iframe src="https://public.tableau.com/views/ist-corrected-eda/ISTEDA?:language=en-US&:display_count=n&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1100" height="475"></iframe>
