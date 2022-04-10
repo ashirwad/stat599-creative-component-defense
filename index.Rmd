@@ -18,6 +18,7 @@ output:
 ```{r extra-setup, include = FALSE}
 xaringanExtra::use_panelset()
 xaringanExtra::use_tachyons()
+source("code/custom-funs.R")
 ```
 
 ```{r setup, include = FALSE}
@@ -193,8 +194,9 @@ knitr::include_graphics(
 
 # .purple[IST recruitment: 19,435 patients, 467 hospitals, 36 countries]
 
-```{r patient-map-leaflet, echo = FALSE, message = FALSE, out.width = "100%", eval = FALSE}
-patient_map_leaflet <- box_read(943115285417)
+```{r patient-map-leaflet, echo = FALSE, message = FALSE, out.width = "100%"}
+patient_map_leaflet <- box_read(943115285417) %>%
+  fix_html_dependency()
 patient_map_leaflet
 ```
 
@@ -213,7 +215,7 @@ ist_trt_crosstab
 
 ]
 
-.panel[.panel-name[Treatment x outcome crosstab]
+.panel[.panel-name[Treatment by outcome crosstab]
 
 ```{r ist-trt-by-outcome-crosstab, echo = FALSE, message = FALSE}
 ist_trt_by_outcome_crosstab <- box_read(943125043668)
