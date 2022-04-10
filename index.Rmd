@@ -24,6 +24,7 @@ xaringanExtra::use_tachyons()
 library(conflicted)
 library(rio)
 library(mapview)
+library(crosstable)
 library(boxr)
 box_auth()
 ```
@@ -192,8 +193,29 @@ knitr::include_graphics(
 
 # .purple[IST recruitment: 19,435 patients, 467 hospitals, 36 countries]
 
-```{r patient-map-leaflet, echo = FALSE, message = FALSE, out.width = "100%"}
+```{r patient-map-leaflet, echo = FALSE, message = FALSE, out.width = "100%", eval = FALSE}
 patient_map_leaflet <- box_read(943115285417)
 patient_map_leaflet
 ```
 
+---
+
+# .purple[IST high-level data summary]
+
+.pull-left[
+
+```{r ist-trt-crosstab, echo = FALSE, message = FALSE}
+ist_trt_crosstab <- box_read(943111724495)
+ist_trt_crosstab
+```
+
+]
+
+.pull-right[
+
+```{r ist-trt-by-outcome-crosstab, echo = FALSE, message = FALSE}
+ist_trt_by_outcome_crosstab <- box_read(943125043668)
+ist_trt_by_outcome_crosstab
+```
+
+]
