@@ -202,7 +202,9 @@ patient_map_leaflet
 
 # .purple[IST high-level data summary]
 
-.pull-left[
+.panelset[
+
+.panel[.panel-name[Treatment crosstab]
 
 ```{r ist-trt-crosstab, echo = FALSE, message = FALSE}
 ist_trt_crosstab <- box_read(943111724495)
@@ -211,11 +213,12 @@ ist_trt_crosstab
 
 ]
 
-.pull-right[
+.panel[.panel-name[Treatment x outcome crosstab]
 
 ```{r ist-trt-by-outcome-crosstab, echo = FALSE, message = FALSE}
 ist_trt_by_outcome_crosstab <- box_read(943125043668)
 ist_trt_by_outcome_crosstab
 ```
 
+]
 ]
