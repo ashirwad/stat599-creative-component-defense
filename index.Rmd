@@ -260,3 +260,15 @@ class: bg-main3 split-30 hide-slide-number
 # [Preliminary EDA](https://public.tableau.com/app/profile/ashirwad.barnwal5453/viz/ist-corrected-eda/ISTEDA)
 
 <iframe src="https://public.tableau.com/views/ist-corrected-eda/ISTEDA?:language=en-US&:display_count=n&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1100" height="475"></iframe>
+
+---
+
+# [Detailed EDA](https://ashirwad.github.io/stat599-creative-component/detailed-eda.html)
+
+```{r detailed-eda-report, echo = FALSE}
+knitr::include_url(
+  "https://ashirwad.github.io/stat599-creative-component/detailed-eda.html",
+  height = "475px"
+)
+```
+
