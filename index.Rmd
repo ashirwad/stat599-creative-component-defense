@@ -272,3 +272,46 @@ knitr::include_url(
 )
 ```
 
+---
+
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
+.font5[Machine learning in R]
+]
+]]
+
+---
+
+# .purple[Meet tidymodels]
+
+.panelset[
+
+.panel[.panel-name[Core packages]
+
+```{r tidymodels-packages, echo = FALSE, fig.show = "hold", out.width = "45%"}
+knitr::include_graphics(
+  c(
+    "https://jhudatascience.org/tidyversecourse/images/book_figures/simpletidymodels.png",
+    "https://jhudatascience.org/tidyversecourse/images/book_figures/Updated_tidymodels_basics.png"
+  )
+)
+```
+
+[via Tidyverse course](https://jhudatascience.org/tidyversecourse/model.html#packages-of-tidymodels)
+
+]
+
+.panel[.panel-name[Machine learning workflow]
+
+```{r tidy-ml-workflow, echo = FALSE}
+knitr::include_graphics("figs/tidymodels-overview.png")
+```
+
+]
+]
