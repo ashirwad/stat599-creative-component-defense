@@ -30,15 +30,21 @@ library(boxr)
 box_auth()
 ```
 
----
-
 # .purple[The big picture]
 
-```{r big-picture, echo = FALSE, out.width = "90%"}
+```{r big-picture, echo = FALSE, out.width = "85%"}
 knitr::include_graphics("figs/ist-big-picture.png")
 ```
 
-[Image sources]()
+Image sources:
+[TL via PNGitem](https://www.pngitem.com/middle/ibhJmTw_risk-carotid-stroke-chiropractic-care-brain-stroke-png/);
+[TC via Pinclipart](https://www.pinclipart.com/pindetail/iTwxmbh_ct-scan-clipart-png-download/);
+[TR via Mayo Clinic](https://www.mayoclinic.org/diseases-conditions/stroke/multimedia/img-20116031);
+[BL via DEVIANT ART](https://www.deviantart.com/kevinbolk/art/House-MD-Art-Card-165347334);
+[BC via PikPng](https://www.pikpng.com/pngvi/Tibxom_erp-software-development-in-islamabd-pakistan-data-analysis-clipart-png-transparent-png/);
+[BR1 via pngset](https://pngset.com/download-free-png-afvwa), 
+[BR2 via CLIPARTMAX](https://www.clipartmax.com/max/m2i8i8N4A0H7H7N4/), 
+[BR3 via Wikimedia](https://commons.wikimedia.org/wiki/File:Eo_circle_green_checkmark.svg)
 
 ---
 
@@ -251,6 +257,6 @@ class: bg-main3 split-30 hide-slide-number
 
 ---
 
-# [Tableau story](https://public.tableau.com/app/profile/ashirwad.barnwal5453/viz/ist-corrected-eda/ISTEDA)
+# [Preliminary EDA](https://public.tableau.com/app/profile/ashirwad.barnwal5453/viz/ist-corrected-eda/ISTEDA)
 
 <iframe src="https://public.tableau.com/views/ist-corrected-eda/ISTEDA?:language=en-US&:display_count=n&:origin=viz_share_link?:showVizHome=no&:embed=true" width="1100" height="475"></iframe>
