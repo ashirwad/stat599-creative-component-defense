@@ -3,7 +3,7 @@
 
 /*customising title background needs to be via remark-slide due to how default title slides are defined*/
 .remark-slide {
-  background-image: url("../bkg/bg1.jpg");
+  background-image: url("../figs/bg-cover-pic-final.png");
   background-size: cover;
   background-position: 100%;
   background-repeat: no-repeat;
