@@ -15,7 +15,7 @@ output:
       countIncrementalSlides: false
 ---
 
-```{r extra-setup, include = FALSE}
+```{r extra-setup, include = FALSE, cache = FALSE}
 knitr::opts_chunk$set(cache = TRUE, autodep = TRUE)
 xaringanExtra::use_panelset()
 xaringanExtra::use_tachyons()
@@ -27,6 +27,8 @@ library(conflicted)
 library(rio)
 library(mapview)
 library(crosstable)
+library(plotly)
+conflict_prefer("layout", "plotly")
 library(boxr)
 box_auth()
 ```
@@ -358,3 +360,13 @@ knitr::include_graphics(
 
 ]
 ]
+
+---
+
+# .purple[ROC-AUC curves]
+
+```{r roc-curves, echo = FALSE, message = FALSE, out.width = "80%"}
+roc_curves <- box_read(944290874393)
+roc_curves
+```
+
