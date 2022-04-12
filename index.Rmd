@@ -370,3 +370,26 @@ roc_curves <- box_read(944290874393)
 roc_curves
 ```
 
+---
+
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
+.font5[Model interpretation]
+]
+]]
+
+---
+
+# .purple[Variable importance plot]
+
+```{r vip-plot, echo = FALSE, message = FALSE, out.width = "100%"}
+vip_plot <- box_read(944362375155)
+vip_plot
+```
+
