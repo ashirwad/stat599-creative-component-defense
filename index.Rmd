@@ -15,17 +15,20 @@ output:
       countIncrementalSlides: false
 ---
 
-```{r extra-setup, include = FALSE}
+```{r extra-setup, include = FALSE, cache = FALSE}
+knitr::opts_chunk$set(cache = TRUE, autodep = TRUE)
 xaringanExtra::use_panelset()
 xaringanExtra::use_tachyons()
 source("code/custom-funs.R")
 ```
 
-```{r setup, include = FALSE}
+```{r setup, include = FALSE, cache = FALSE}
 library(conflicted)
 library(rio)
 library(mapview)
 library(crosstable)
+library(plotly)
+conflict_prefer("layout", "plotly")
 library(boxr)
 box_auth()
 ```
@@ -270,5 +273,100 @@ knitr::include_url(
   "https://ashirwad.github.io/stat599-creative-component/detailed-eda.html",
   height = "475px"
 )
+```
+
+---
+
+layout: false
+class: bg-main3 split-30 hide-slide-number
+
+.column[
+
+]
+.column.slide-in-right[.content.vmiddle[
+.sliderbox.shade_main.pad1[
+.font5[Machine learning in R]
+]
+]]
+
+---
+
+# .purple[Meet tidymodels]
+
+.panelset[
+
+.panel[.panel-name[Core packages]
+
+```{r tidymodels-packages, echo = FALSE, fig.show = "hold", out.width = "45%"}
+knitr::include_graphics(
+  c(
+    "https://jhudatascience.org/tidyversecourse/images/book_figures/simpletidymodels.png",
+    "https://jhudatascience.org/tidyversecourse/images/book_figures/Updated_tidymodels_basics.png"
+  )
+)
+```
+
+[via Tidyverse course](https://jhudatascience.org/tidyversecourse/model.html#packages-of-tidymodels)
+
+]
+
+.panel[.panel-name[Machine learning workflow]
+
+```{r tidy-ml-workflow, echo = FALSE}
+knitr::include_graphics("figs/tidymodels-overview.png")
+```
+
+]
+]
+
+---
+
+# .purple[Machine learning algorithms]
+
+.panelset[
+
+.panel[.panel-name[Random forest]
+
+```{r random-forest, echo = FALSE, out.width = "45%"}
+knitr::include_graphics("https://www.tibco.com/sites/tibco/files/media_entity/2021-05/random-forest-diagram.svg")
+```
+
+[via TIBCO](https://www.tibco.com/reference-center/what-is-a-random-forest)
+
+]
+
+.panel[.panel-name[Neural network]
+
+```{r neural-network, echo = FALSE, out.width = "80%"}
+knitr::include_graphics("https://www.simplilearn.com/ice9/free_resources_article_thumb/ArtificalNeuralNetwork.PNG")
+```
+
+[via simplilearn](https://www.simplilearn.com/tutorials/deep-learning-tutorial/deep-learning-algorithm)
+
+]
+
+.panel[.panel-name[Support vector machine]
+
+```{r support-vector-machine, echo = FALSE, fig.show = "hold", out.width = "40%"}
+knitr::include_graphics(
+  c(
+    "https://learnopencv.com/wp-content/uploads/2018/07/support-vectors-and-maximum-margin-768x683.png",
+    "https://learnopencv.com/wp-content/uploads/2018/01/opcv4face-w7-m1-nonLinearSVM.png"
+  )
+)
+```
+
+[via LearnOpenCV](https://learnopencv.com/support-vector-machines-svm/)
+
+]
+]
+
+---
+
+# .purple[ROC-AUC curves]
+
+```{r roc-curves, echo = FALSE, message = FALSE, out.width = "80%"}
+roc_curves <- box_read(944290874393)
+roc_curves
 ```
 
