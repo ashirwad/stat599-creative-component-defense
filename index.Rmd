@@ -16,12 +16,13 @@ output:
 ---
 
 ```{r extra-setup, include = FALSE}
+knitr::opts_chunk$set(cache = TRUE, autodep = TRUE)
 xaringanExtra::use_panelset()
 xaringanExtra::use_tachyons()
 source("code/custom-funs.R")
 ```
 
-```{r setup, include = FALSE}
+```{r setup, include = FALSE, cache = FALSE}
 library(conflicted)
 library(rio)
 library(mapview)
@@ -312,6 +313,48 @@ knitr::include_graphics(
 ```{r tidy-ml-workflow, echo = FALSE}
 knitr::include_graphics("figs/tidymodels-overview.png")
 ```
+
+]
+]
+
+---
+
+# .purple[Machine learning algorithms]
+
+.panelset[
+
+.panel[.panel-name[Random forest]
+
+```{r random-forest, echo = FALSE, out.width = "45%"}
+knitr::include_graphics("https://www.tibco.com/sites/tibco/files/media_entity/2021-05/random-forest-diagram.svg")
+```
+
+[via TIBCO](https://www.tibco.com/reference-center/what-is-a-random-forest)
+
+]
+
+.panel[.panel-name[Neural network]
+
+```{r neural-network, echo = FALSE, out.width = "80%"}
+knitr::include_graphics("https://www.simplilearn.com/ice9/free_resources_article_thumb/ArtificalNeuralNetwork.PNG")
+```
+
+[via simplilearn](https://www.simplilearn.com/tutorials/deep-learning-tutorial/deep-learning-algorithm)
+
+]
+
+.panel[.panel-name[Support vector machine]
+
+```{r support-vector-machine, echo = FALSE, fig.show = "hold", out.width = "40%"}
+knitr::include_graphics(
+  c(
+    "https://learnopencv.com/wp-content/uploads/2018/07/support-vectors-and-maximum-margin-768x683.png",
+    "https://learnopencv.com/wp-content/uploads/2018/01/opcv4face-w7-m1-nonLinearSVM.png"
+  )
+)
+```
+
+[via LearnOpenCV](https://learnopencv.com/support-vector-machines-svm/)
 
 ]
 ]
