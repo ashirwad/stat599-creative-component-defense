@@ -411,3 +411,15 @@ pdp_age_rsbp
 local_profile_old <- box_read(944753607091)
 local_profile_old
 ```
+
+---
+
+# .purple[Thanks & Happy Spring!]
+
+```{r happy-spring, echo = FALSE, out.width = "64%"}
+knitr::include_graphics("figs/isu-campanile-spring.jpg")
+```
+
+[via Iowa State University](https://iowastate.photoshelter.com/galleries/C0000rWLI9E_oKgc/G0000J2URC8AfrrQ/I0000yOytd2IQ8b8/20200406-CycloneVision047-JPG)
+
+
