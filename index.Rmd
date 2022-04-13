@@ -30,6 +30,7 @@ library(mapview)
 library(crosstable)
 library(plotly)
 conflict_prefer("layout", "plotly")
+library(reactablefmtr)
 library(boxr)
 box_auth()
 ```
@@ -364,6 +365,15 @@ knitr::include_graphics(
 
 ---
 
+# .purple[Algorithm comparison]
+
+```{r algo-comp-table, echo = FALSE, message = FALSE}
+algo_comp_table <- box_read(944769892475)
+algo_comp_table
+```
+
+---
+
 # .purple[ROC-AUC curves]
 
 ```{r roc-curves, echo = FALSE, message = FALSE, out.width = "80%"}
@@ -421,5 +431,4 @@ knitr::include_graphics("figs/isu-campanile-spring.jpg")
 ```
 
 [via Iowa State University](https://iowastate.photoshelter.com/galleries/C0000rWLI9E_oKgc/G0000J2URC8AfrrQ/I0000yOytd2IQ8b8/20200406-CycloneVision047-JPG)
-
 
