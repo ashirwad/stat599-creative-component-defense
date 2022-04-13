@@ -1,7 +1,8 @@
 ---
-title: "Stat 599 defense"
-author: "Ashirwad Barnwal"
-date: '2022-04-07'
+title: "Precision medicine in R"
+subtitle: "A case study using stroke data from the International Stroke Trial"
+author: "<br>Ashirwad Barnwal"
+date: "<br>13-Apr-2022<br>"
 output: 
   xaringan::moon_reader:
     lib_dir: libs
