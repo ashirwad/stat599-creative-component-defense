@@ -403,3 +403,11 @@ pdp_age_rsbp <- box_read(944402718981)
 pdp_age_rsbp
 ```
 
+---
+
+# .purple[Local interpretation]
+
+```{r local-profile-old, echo = FALSE, message = FALSE, out.width = "100%"}
+local_profile_old <- box_read(944753607091)
+local_profile_old
+```
