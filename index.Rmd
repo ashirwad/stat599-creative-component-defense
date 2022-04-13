@@ -393,3 +393,12 @@ vip_plot <- box_read(944362375155)
 vip_plot
 ```
 
+---
+
+# .purple[Global interpretation]
+
+```{r pdp-age-rsbp, echo = FALSE, message = FALSE, out.width = "100%"}
+pdp_age_rsbp <- box_read(944402718981)
+pdp_age_rsbp
+```
+
