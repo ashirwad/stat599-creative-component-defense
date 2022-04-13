@@ -31,6 +31,8 @@ library(crosstable)
 library(plotly)
 conflict_prefer("layout", "plotly")
 library(reactablefmtr)
+library(DALEX)
+library(patchwork)
 library(boxr)
 box_auth()
 ```
@@ -380,6 +382,31 @@ algo_comp_table
 roc_curves <- box_read(944290874393)
 roc_curves
 ```
+
+---
+
+# .purple[Residual diagnostics]
+
+```{r resid-diag-plot, include = FALSE}
+resid_diag_plot <- box_read(944789963509)
+resid_diag_plot
+```
+
+.pull-left[
+
+```{r resid-diag-box, echo = FALSE}
+resid_diag_plot[[1]]
+```
+
+]
+
+.pull-right[
+
+```{r resid-diag-line, echo = FALSE}
+resid_diag_plot[[2]]
+```
+
+]
 
 ---
 
